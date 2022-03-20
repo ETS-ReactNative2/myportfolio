@@ -15,9 +15,20 @@ body{
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+
 .hello-img {
   width: 40px;
   filter: invert(1);
+}
+
+.laptop-gif{
+  width: 300px;
+  filter: invert(0.866667);
+}
+
+.header-section{
+  display: flex;
+  justify-content: center;
 }
 
 .App-header {

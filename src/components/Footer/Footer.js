@@ -4,6 +4,7 @@ import Github from "../../assets/img/github.png";
 import Linkedin from "../../assets/img/linkedin.png";
 import Email from "../../assets/img/email.png";
 
+
 const Footer = () => {
     return (
         <footer>
