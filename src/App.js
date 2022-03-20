@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.jpeg';
-import './App.css';
-import { FaHeart, FaRegHeart} from 'react-icons/fa';
-import hello2 from '../src/assets/img/hello2.png';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Index";
+import {Route, Routes} from "react-router-dom";
+import {Home} from "./components/Body/Home";
+import {Tech} from "./components/Body/Tech";
+import {Skills} from "./components/Body/Skills";
+import {Projects} from "./components/Body/Projects";
+import {Contact} from "./components/Body/Contact";
+import Footer from "./components/Footer/Footer";
 
-class App extends Component {
-  render() {
+
+function App() {
     return (
-      <div className="App">
-          <div className="Navbar-logo">
-              <img src={logo} className="App-logo" alt="logo" />
-          </div>
-        <div className="App-header">
-          <h2>Hello!  <span><img src={hello2} className="hello-img" alt="hello" /></span></h2>
-                <h2>I am Desirée Moreno</h2>
-            <h2>Welcome to my Portfolio</h2>
-            <FaHeart /> <FaRegHeart /> <FaHeart /> <FaRegHeart />
+        <div className="App">
+            <Navbar/>
+            <Routes>
+                <Route path='/' exact element={<Home/>}/>
+                <Route path="/tech" element={<Tech/>}/>
+                <Route path='/skills' element={<Skills/>}/>
+                <Route path='/projects' element={<Projects/>}/>
+                <Route path='/Contact' element={<Contact/>}/>
+            </Routes>
+            <Footer/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
     );
-  }
 }
 
 export default App;
