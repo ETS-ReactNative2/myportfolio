@@ -15,6 +15,7 @@ z-index: 12;
 
 export const NavLink = styled(Link)`
 color: #808080;
+font-family: monospace, san-serif;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -22,7 +23,7 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-	color: #555;
+	color: #fff;
 }
 `;
 
@@ -69,6 +70,7 @@ width: 100vw; */
 export const NavBtnLink = styled(Link)`
 border-radius: 4px;
 background: #ffffff;
+font-family: monospace, san-serif;
 padding: 10px 22px;
 color: #808080;
 outline: none;

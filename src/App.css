@@ -1,3 +1,6 @@
+body{
+  background-color: #222222;
+}
 .App {
   text-align: center;
 }
@@ -14,11 +17,13 @@
 }
 .hello-img {
   width: 40px;
+  filter: invert(1);
 }
 
 .App-header {
   background-color: #222;
-  height: 600px;
+  font-family: monospace, sans-serif;
+  height: 200px;
   padding: 20px;
   color: white;
 }
