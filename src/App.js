@@ -22,8 +22,8 @@ function App() {
             <Navbar/>
             <Home/>
             <Tech/>
-            <Skills/>
             <Projects/>
+            <Skills/>
             <Contact/>
             <Footer/>
         </div>
