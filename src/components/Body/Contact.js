@@ -5,6 +5,7 @@ export const Contact = () => {
         <div className="Tech-title">
             <h2>CONTACT</h2>
         </div>
+
     );
 };
 

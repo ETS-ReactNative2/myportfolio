@@ -1,50 +1,86 @@
 import React from 'react';
 import "./Tech.css";
-import Html from "../../assets/img/html5.png"
-import Css from "../../assets/img/css-3.png"
-import Js from "../../assets/img/js.png"
-import Jquery from "../../assets/img/jquery-4.svg"
-import react from "../../assets/img/atom.png"
-import Spring from "../../assets/img/springboot.png"
-import Gradle from "../../assets/img/gradle.png"
-import Node from "../../assets/img/nodejs.png"
-import VsCode from "../../assets/img/vscode.png"
-import Mocha from "../../assets/img/mocha.png"
-import Postman from "../../assets/img/postman.svg"
-import Bootstrap from "../../assets/img/bootstrap.png"
-import JUnit from "../../assets/img/junit.png"
-import Github from "../../assets/img/github.png"
-import Java from "../../assets/img/java.png"
+import * as icon from '../../assets/img/techImg'
+
+const Tech = () => {
+
+    const Tech = [
+        {
+            image: icon.html,
+            name: 'HTML'
+        },
+        {
+            image: icon.css,
+            name: 'CSS'
+        },
+        {
+            image: icon.jquery,
+            name: 'JQUERY'
+        },
+        {
+            image: icon.js,
+            name: 'JAVASCRIPT'
+        },
+        {
+            image: icon.react,
+            name: 'REACT'
+        },
+        {
+            image: icon.springboot,
+            name: 'SPRINGBOOT'
+        },
+        {
+            image: icon.gradle,
+            name: 'GRADLE'
+        },
+        {
+            image: icon.node,
+            name: 'NODEJS'
+        },
+
+        {
+            image: icon.mocha,
+            name: 'MOCHA'
+        },
+        {
+            image: icon.postman,
+            name: 'POSTMAN'
+        },
+        {
+            image: icon.java,
+            name: 'JAVA'
+        },
+        {
+            image: icon.junit,
+            name: 'JUNIT'
+        },
+        {
+            image: icon.github,
+            name: 'GITHUB'
+        },
+        {
+            image: icon.postgres,
+            name: 'POSTGRESQL'
+        },
+    ]
 
 
-export const Tech = () => {
     return (
-        <div className="Tech-title">
-            <h2>TECH</h2>
-            <div className="Tech-icons">
-                <span className="icon-span"><img src={Html} className="tech-img" alt="html"/></span>
-                <span className="icon-span"><img src={Css} className="tech-img" alt="Css"/></span>
-                <span className="icon-span"><img src={Js} className="tech-img" alt="Js"/></span>
-                <span className="icon-span"><img src={Jquery} className="tech-img" alt="Jquery"/></span>
-                <span className="icon-span"><img src={react} className="tech-img" alt="react"/></span>
+        <section>
+            <div className="Tech-title">
+                <h2>TECH</h2>
+                <div className="tech-grid">
+                    {Tech.map(Tech =>
+                        <div className="tech-card" key={Tech.name}>
+                           {Tech.image}
+                            <p>{Tech.name}</p>
+                        </div>
+                    )}
+                </div>
             </div>
-            <div className="Tech-icons">
-                <span className="icon-span"><img src={Java} className="tech-img" alt="Java"/></span>
-                <span className="icon-span"><img src={Spring} className="tech-img" alt="Spring"/></span>
-                <span className="icon-span"><img src={Gradle} className="tech-img1" alt="Gradle"/></span>
-                <span className="icon-span"><img src={Node} className="tech-img" alt="Node"/></span>
-                <span className="icon-span"><img src={VsCode} className="tech-img" alt="VsCode"/></span>
-            </div>
+        </section>
+    )
+}
 
-            <div className="Tech-icons">
-                <span className="icon-span"><img src={Mocha} className="tech-img1" alt="Mocha"/></span>
-                <span className="icon-span"><img src={Postman} className="tech-img" alt="Postman"/></span>
-                <span className="icon-span"><img src={Bootstrap} className="tech-img" alt="Bootstrap"/></span>
-                <span className="icon-span"><img src={JUnit} className="tech-img1" alt="JUnit"/></span>
-                <span className="icon-span"><img src={Github} className="tech-img" alt="Github"/></span>
-            </div>
-        </div>
 
-    );
-};
-
+export default Tech
