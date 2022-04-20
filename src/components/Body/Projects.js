@@ -9,6 +9,7 @@ import quieroTrabajo from "../../assets/img/quieroTrabajo.png";
 import toDoList from "../../assets/img/toDoList.png";
 import wheelOfDoom from "../../assets/img/wheelOfDoom.png";
 import coders from "../../assets/img/coders.png";
+import './Projects.css'
 
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
@@ -45,7 +46,7 @@ export const Projects = () => {
                           showDots={false}
                           ssr={true} // means to render carousel on server-side.
                           infinite={true}
-                          autoPlaySpeed={3000}
+                        //   autoPlaySpeed={3000}
                           keyBoardControl={true}
                           customTransition="all .5"
                           transitionDuration={500}
@@ -56,15 +57,15 @@ export const Projects = () => {
                 >
 
 
-                    <div><img src={econotravel} className="img-container" alt={econotravel}/></div>
-                    <div><img src={goHome} alt={goHome}/></div>
-                    <div><img src={legacyGames} alt={legacyGames}/></div>
+                    <div className="project-img"><img src={econotravel} className="img-container" alt={econotravel}/></div>
+                    <div className="project-img"><img className="img-container" src={goHome} alt={goHome}/></div>
+                    {/* <div><img src={legacyGames} alt={legacyGames}/></div>
                     <div><img src={libritos} alt={libritos}/></div>
                     <div><img src={paginaDeEquipo} alt={paginaDeEquipo}/></div>
                     <div><img src={quieroTrabajo} alt={quieroTrabajo}/></div>
                     <div><img src={toDoList} alt={toDoList}/></div>
                     <div><img src={wheelOfDoom} alt={wheelOfDoom}/></div>
-                    <div><img src={coders} alt={coders}/></div>
+                    <div><img src={coders} alt={coders}/></div> */}
 
                 </Carousel>
             </div>
