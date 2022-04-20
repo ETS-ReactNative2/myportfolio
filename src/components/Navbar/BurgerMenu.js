@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Navbar from "./Index";
+import Navbar from "./Header";
 
 
 export default function MainNavigation() {

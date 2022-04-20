@@ -7,8 +7,8 @@ import laptop from "../../assets/img/ordenador-portatil.gif";
 export const Home = () => {
 
     return (
-        <div className="App">
-            <div className="header-section">
+        <div className="App home">
+            <div className="top-section">
                 <div className="App-img">
                     <img className="laptop-gif" src={laptop}/>
                 </div>

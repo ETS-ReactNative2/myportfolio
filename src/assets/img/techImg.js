@@ -1,7 +1,7 @@
 const react = (
     <img
         className="tech-image"
-        src="atom.png"
+        src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
         alt=""
     />
 );
@@ -9,7 +9,7 @@ const react = (
 const bootstrap = (
     <img
         className="tech-image"
-        src="bootstrap.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
         alt=""
     />
 );
@@ -17,7 +17,7 @@ const bootstrap = (
 const css = (
     <img
         className="tech-image"
-        src="css-3.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
         alt=""
     />
 );
@@ -25,7 +25,7 @@ const css = (
 const gradle = (
     <img
         className="tech-image"
-        src="gradle.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg"
         alt=""
     />
 );
@@ -34,7 +34,7 @@ const gradle = (
 const html = (
     <img
         className="tech-image"
-        src="https://cdn-icons-png.flaticon.com/512/919/919827.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
         alt=""
     />
 );
@@ -42,7 +42,7 @@ const html = (
 const java = (
     <img
         className="tech-image"
-        src="java.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         alt=""
     />
 );
@@ -50,7 +50,7 @@ const java = (
 const jquery = (
     <img
         className="tech-image"
-        src="jquery-4.svg"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
         alt=""
     />
 );
@@ -58,7 +58,7 @@ const jquery = (
 const js = (
     <img
         className="tech-image"
-        src="js.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         alt=""
     />
 );
@@ -66,7 +66,7 @@ const js = (
 const junit = (
     <img
         className="tech-image"
-        src="junit.png"
+        src="https://javacodehouse.com/assets/img/thumb/JUnit.svg"
         alt=""
     />
 );
@@ -74,7 +74,7 @@ const junit = (
 const mocha = (
     <img
         className="tech-image"
-        src="mocha.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg"
         alt=""
     />
 );
@@ -82,7 +82,7 @@ const mocha = (
 const node = (
     <img
         className="tech-image"
-        src="nodejs.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
         alt=""
     />
 );
@@ -90,7 +90,7 @@ const node = (
 const postgres = (
     <img
         className="tech-image"
-        src="PostgreSQL.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
         alt=""
     />
 );
@@ -98,7 +98,7 @@ const postgres = (
 const postman = (
     <img
         className="tech-image"
-        src="postman.svg"
+        src="https://cdn.worldvectorlogo.com/logos/postman.svg"
         alt=""
     />
 );
@@ -106,7 +106,7 @@ const postman = (
 const springboot = (
     <img
         className="tech-image"
-        src="springboot.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
         alt=""
     />
 );
@@ -114,7 +114,7 @@ const springboot = (
 const vscode = (
     <img
         className="tech-image"
-        src="vscode.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
         alt=""
     />
 );
@@ -122,15 +122,15 @@ const vscode = (
 const cpanel = (
     <img
         className="tech-image"
-        src="Cpanel.png"
+        src="https://cdn.worldvectorlogo.com/logos/cpanel.svg"
         alt=""
     />
 );
 
-const dokan = (
+const powershell = (
     <img
         className="tech-image"
-        src="dokan.png"
+        src="https://www.svgrepo.com/show/306596/powershell.svg"
         alt=""
     />
 );
@@ -146,7 +146,7 @@ const elementor = (
 const figma = (
     <img
         className="tech-image"
-        src="figma.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         alt=""
     />
 );
@@ -154,7 +154,7 @@ const figma = (
 const github = (
     <img
         className="tech-image"
-        src="github.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
         alt=""
     />
 );
@@ -162,7 +162,7 @@ const github = (
 const mailchimp = (
     <img
         className="tech-image"
-        src="mailchimp.jpg"
+        src="https://cdn.worldvectorlogo.com/logos/mailchimp-freddie-icon.svg"
         alt=""
     />
 );
@@ -170,15 +170,15 @@ const mailchimp = (
 const motherboard = (
     <img
         className="tech-image"
-        src="motherboard.png"
+        src=""
         alt=""
     />
 );
 
-const powershell = (
+const heroku = (
     <img
         className="tech-image"
-        src="powershell.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
         alt=""
     />
 );
@@ -186,7 +186,7 @@ const powershell = (
 const woocommerce = (
     <img
         className="tech-image"
-        src="woocommerce.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg"
         alt=""
     />
 );
@@ -194,13 +194,33 @@ const woocommerce = (
 const wordpress = (
     <img
         className="tech-image"
-        src="wordpress.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
         alt=""
     />
 );
 
+const npm = (
+    <img
+        className="tech-image"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+        alt=""
+    />
+);
+
+const linux = (
+    <img
+        className="tech-image"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+        alt=""
+    />
+);
+
+
 export {
     react,
+    heroku,
+    npm,
+    linux,
     bootstrap,
     css,
     gradle,
@@ -208,6 +228,7 @@ export {
     java,
     jquery,
     js,
+    powershell,
     junit,
     mocha,
     node,
@@ -216,13 +237,11 @@ export {
     springboot,
     vscode,
     cpanel,
-    dokan,
     elementor,
     figma,
     github,
     mailchimp,
     motherboard,
-    powershell,
     woocommerce,
     wordpress,
 };

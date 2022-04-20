@@ -33,10 +33,6 @@ const Tech = () => {
             image: icon.gradle,
             name: 'GRADLE'
         },
-        {
-            image: icon.node,
-            name: 'NODEJS'
-        },
 
         {
             image: icon.mocha,
@@ -62,12 +58,24 @@ const Tech = () => {
             image: icon.postgres,
             name: 'POSTGRESQL'
         },
+        {
+            image: icon.npm,
+            name: 'NPM'
+        },
+        {
+            image: icon.node,
+            name: 'NODEJS'
+        },
+        {
+            image: icon.bootstrap,
+            name: 'BOOTSTRAP'
+        },
     ]
 
 
     return (
         <section>
-            <div className="Tech-title">
+            <div className="Tech-title tech">
                 <h2>TECH</h2>
                 <div className="tech-grid">
                     {Tech.map(Tech =>

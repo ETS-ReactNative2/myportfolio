@@ -38,7 +38,7 @@ export const Projects = () => {
 
     return (
         <container className="carousel-container">
-            <div className="Tech-title">
+            <div className="Tech-title projects">
                 <h2>PROJECTS</h2>
                 <Carousel responsive={responsive} swipeable={false}
                           draggable={true}

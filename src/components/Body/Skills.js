@@ -5,47 +5,30 @@ import * as icon from '../../assets/img/techImg.js';
 const Skills = () => {
 
     const Skills = [
+
         {
-            image: icon.bootstrap,
-            name: 'BOOTSTRAP'
+            image: icon.powershell,
+            name: 'POWERSHELL'
+        },
+        {
+            image: icon.linux,
+            name: 'LINUX'
         },
         {
             image: icon.cpanel,
             name: 'CPANEL'
         },
-        {
-            image: icon.dokan,
-            name: 'DOKAN'
-        },
-        {
-            image: icon.elementor,
-            name: 'ELEMENTOR'
-        },
+
         {
             image: icon.figma,
             name: 'FIGMA'
         },
-        {
-            image: icon.github,
-            name: 'GITHUB'
-        },
+
         {
             image: icon.mailchimp,
             name: 'MAILCHIMP'
         },
-        {
-            image: icon.motherboard,
-            name: 'HARDWARE'
-        },
 
-        {
-            image: icon.node,
-            name: 'NODEJS'
-        },
-        {
-            image: icon.powershell,
-            name: 'POWERSHELL'
-        },
         {
             image: icon.vscode,
             name: 'VSCODE'
@@ -63,7 +46,7 @@ const Skills = () => {
 
     return (
         <section>
-            <div className="Tech-title">
+            <div className="Tech-title skills">
                 <h2>SKILLS</h2>
                 <div className="tech-grid">
                     {Skills.map(Skills =>
