@@ -13,6 +13,16 @@ body {
     height: 100px;
 }
 
+a > .Navbar-logo {
+  position: absolute;
+  top: 0; 
+  left: 0;
+}
+
+header ul {
+  display: flex;
+}
+
 header ul li {
     display: flex;
     padding-right: 2em;
