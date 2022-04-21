@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import econotravel from "../../assets/img/econotravel.png";
 import goHome from "../../assets/img/goHome.png";
@@ -112,6 +112,8 @@ export const Projects = () => {
         }
     };
 
+
+    const [showHoverLayer, setShowHoverLayer] = useState(false);
     return (
         <container className="carousel-container">
             <div className="Tech-title projects">
@@ -132,8 +134,48 @@ export const Projects = () => {
                 >
 
                     {projects.map(project =>
-                        (<div className="project-img"><img src={project.image} className="img-container" alt={project.name}/></div>)
-                        )}
+                        (<div className="project-img" onMouseEnter={() => setShowHoverLayer(true)}
+                              onMouseLeave={() => setShowHoverLayer(false)}><img src={project.image} className="img-container" alt={project.name}/>
+
+                                    {showHoverLayer && <div className="hover-layer">
+                                        <h1>{project.name}</h1>
+                                        <br/>
+                                        <p>Stack used:</p>
+                                        <div className="stack-icons">{project.stack}</div>
+
+
+                                            <a target="_blank" rel="noreferrer" href={project.github}>
+                                                <button className="cssbuttons-io-button"> GitHub
+                                                    <div className="icon">
+                                                        <svg height="24" width="24" viewBox="0 0 24 24"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </a>
+
+                                            {project.demo && <a target="_blank" rel="noreferrer" href={project.demo}>
+                                                <button className="cssbuttons-io-button"> Demo
+                                                    <div className="icon">
+                                                        <svg height="24" width="24" viewBox="0 0 24 24"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </a>}
+
+                                    </div>}
+                            </div>
+                        )
+                    )}
 
 
                 </Carousel>
