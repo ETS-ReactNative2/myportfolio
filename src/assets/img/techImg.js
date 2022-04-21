@@ -135,13 +135,14 @@ const powershell = (
     />
 );
 
-const elementor = (
+const git = (
     <img
         className="tech-image"
-        src="elementor.png"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
         alt=""
     />
 );
+
 
 const figma = (
     <img
@@ -163,14 +164,6 @@ const mailchimp = (
     <img
         className="tech-image"
         src="https://cdn.worldvectorlogo.com/logos/mailchimp-freddie-icon.svg"
-        alt=""
-    />
-);
-
-const motherboard = (
-    <img
-        className="tech-image"
-        src=""
         alt=""
     />
 );
@@ -220,6 +213,7 @@ export {
     react,
     heroku,
     npm,
+    git,
     linux,
     bootstrap,
     css,
@@ -237,11 +231,9 @@ export {
     springboot,
     vscode,
     cpanel,
-    elementor,
     figma,
     github,
     mailchimp,
-    motherboard,
     woocommerce,
     wordpress,
 };

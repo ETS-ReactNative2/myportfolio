@@ -10,12 +10,87 @@ import toDoList from "../../assets/img/toDoList.png";
 import wheelOfDoom from "../../assets/img/wheelOfDoom.png";
 import coders from "../../assets/img/coders.png";
 import './Projects.css'
-
+import * as icon from '../../assets/img/techImg';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 
 
 export const Projects = () => {
+
+
+    const projects = [
+        {
+            name: 'Econotravel',
+            image: econotravel,
+            description: 'Econotravel is an eco-friendly travel agency that offers trips and experiences all around Catalonia.',
+            stack: [icon.github, icon.springboot, icon.figma, icon.git, icon.js, icon.java, icon.react, icon.css],
+            github: 'https://github.com/desimorenoh/bftp2-econotravel-client',
+            demo: ''
+        },
+        {
+            name: 'Go Home',
+            image: goHome,
+            description: 'Go Home is a marketplace for the real estate sector. Finalist project of the Hackathon F5.',
+            stack: [icon.github, icon.springboot, icon.git, icon.js, icon.java, icon.css, icon.bootstrap, icon.heroku],
+            github: 'https://github.com/desimorenoh/goHome',
+            demo: 'https://gohomehackaton2022.herokuapp.com/'
+        },
+        {
+            name: 'Legacy Games',
+            image: legacyGames,
+            description: 'Online catalog for a video-game store to view and administrate commodities.',
+            stack: [icon.github, icon.springboot, icon.git, icon.bootstrap, icon.java, icon.html, icon.css],
+            github: 'https://github.com/desimorenoh/legacygames',
+            demo: ''
+        },
+        {
+            name: 'Libritos',
+            image: libritos,
+            description: 'Online catalog for a book store to view and administrate stock',
+            stack: [icon.github, icon.springboot, icon.git, icon.bootstrap, icon.java, icon.html, icon.css],
+            github: 'https://github.com/desimorenoh/libritos',
+            demo: ''
+        },
+        {
+            name: 'Mujeres Full Stack',
+            image: paginaDeEquipo,
+            description: 'my first project to show off the work team',
+            stack: [icon.github, icon.html, icon.css],
+            github: 'https://github.com/desimorenoh/bftp2-project1-group5',
+            demo: 'https://mujeresfullstack.netlify.app/'
+        },
+        {
+            name: 'Fundación Quiero Trabajo',
+            image: quieroTrabajo,
+            description: 'Project to manage the stock of donations for Fundación Quiero Trabajo',
+            stack: [icon.github, icon.html, icon.css, icon.react, icon.heroku, icon.git, icon.springboot, icon.figma, icon.java],
+            github: 'https://github.com/desimorenoh/bftp2-project1-group5',
+            demo: 'https://bftp2-fqt-grupo1.herokuapp.com/'
+        },
+        {
+            name: 'To Do List',
+            image: toDoList,
+            description: '',
+            stack: [icon.github, icon.react, icon.css],
+            github: 'https://github.com/desimorenoh/toDoList',
+            demo: 'https://desimorenotodolist.netlify.app/'
+        },
+        {
+            name: 'Wheel Of Doom',
+            image: wheelOfDoom,
+            description: 'Wheel of Doom allows you to pick a random name out of a given list without the same name coming up twice until all the names have been chosen.',
+            stack: [icon.github, icon.html, icon.css, icon.js],
+            github: 'https://github.com/desimorenoh/JS_proyecto_grupo3',
+            demo: 'https://wheelofdoom.netlify.app/'
+        },
+        {
+            name: 'Coders',
+            image: coders,
+            description: 'Wheel of Doom allows you to pick a random name out of a given list without the same name coming up twice until all the names have been chosen.',
+            stack: [icon.github, icon.html, icon.css, icon.java, icon.springboot],
+            github: 'https://github.com/desimorenoh/coders',
+            demo: ''
+        }]
 
     const responsive = {
         superLargeDesktop: {
@@ -56,16 +131,10 @@ export const Projects = () => {
                           itemClass="carousel-item-padding-40-px"
                 >
 
+                    {projects.map(project =>
+                        (<div className="project-img"><img src={project.image} className="img-container" alt={project.name}/></div>)
+                        )}
 
-                    <div className="project-img"><img src={econotravel} className="img-container" alt={econotravel}/></div>
-                    <div className="project-img"><img className="img-container" src={goHome} alt={goHome}/></div>
-                    <div className="project-img"><img src={legacyGames} alt={legacyGames}/></div>
-                    <div className="project-img"><img src={libritos} alt={libritos}/></div>
-                    <div className="project-img"><img src={paginaDeEquipo} alt={paginaDeEquipo}/></div>
-                    <div className="project-img"><img src={quieroTrabajo} alt={quieroTrabajo}/></div>
-                    <div className="project-img"><img src={toDoList} alt={toDoList}/></div>
-                    <div className="project-img"><img src={wheelOfDoom} alt={wheelOfDoom}/></div>
-                    <div className="project-img"><img src={coders} alt={coders}/></div>
 
                 </Carousel>
             </div>
@@ -73,3 +142,4 @@ export const Projects = () => {
     );
 };
 
+export default Projects
