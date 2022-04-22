@@ -128,11 +128,11 @@ export const Projects = () => {
                         (<div className="project-img" onMouseEnter={() => setShowHoverLayer(true)}
                               onMouseLeave={() => setShowHoverLayer(false)}><img src={project.image} className="img-container" alt={project.name}/>
 
-                                    {showHoverLayer && <div className="hover-layer">
-                                        <h1>{project.name}</h1>
-                                        <br/>
-                                        <p>Stack used:</p>
-                                        <div className="stack-icons">{project.stack}</div>
+                            {showHoverLayer && <div className="hover-layer">
+                                <h1>{project.name}</h1>
+                                <br/>
+                                <p>Stack used:</p>
+                                <div className="stack-icons">{project.stack}</div>
 
 
                                             <a target="_blank" rel="noreferrer" href={project.github}>

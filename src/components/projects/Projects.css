@@ -15,7 +15,8 @@
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
 }
-.hover-layer{
+
+.hover-layer {
     text-align: center;
     cursor: pointer;
     font-family: monospace, san-serif;
@@ -30,8 +31,9 @@
     flex-direction: column;
     align-items: center;
     z-index: 100;
-    color: white ;
+    color: white;
 }
+
 .cssbuttons-io-button {
     background: #ffffff;
     color: #000000;
@@ -85,21 +87,47 @@
 .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
 }
+
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
 }
 
-.button-project{
+.button-project {
     display: flex;
     align-items: baseline;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
-    .hover-layer {
+    .hover-layer h1 {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
 
+    .hover-layer p {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+
+    .cssbuttons-io-button .icon {
+        height: 1em;
+        width: 1.2em;
+    }
+
+    .tech-image {
+        width: 20px;
+    }
+
+    .cssbuttons-io-button {
+        font-size: 12px;
+        margin-top: 3px;
+        height: 1.5rem;
+        padding-right: 2rem;
     }
 }
