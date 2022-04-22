@@ -1,8 +1,8 @@
 import React from 'react';
 import "../../App.css";
 import {FaHeart, FaRegHeart} from 'react-icons/fa';
-import hello from "../../assets/img/hello.png";
-import laptop from "../../assets/img/ordenador-portatil.gif";
+import hello from "../../assets/img/headerImg/hello.png";
+import laptop from "../../assets/img/headerImg/ordenador-portatil.gif";
 
 export const Home = () => {
 

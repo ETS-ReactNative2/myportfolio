@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Tech.css";
-import * as icon from '../../assets/img/techImg.js';
+import * as icon from '../../assets/img/icons/techImg.js';
 
 const Skills = () => {
 

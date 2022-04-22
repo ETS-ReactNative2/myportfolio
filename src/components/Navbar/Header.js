@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/img/logo.jpeg";
+import logo from "../../assets/img/headerImg/logo.jpeg";
 import {Link} from "react-scroll";
 
 import {useScrollHandler} from '../ScrollHandler'

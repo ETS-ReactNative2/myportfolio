@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 
-import econotravel from "../../assets/img/econotravel.png";
-import goHome from "../../assets/img/goHome.png";
-import legacyGames from "../../assets/img/legacyGames.png";
-import libritos from "../../assets/img/libritos.png";
-import paginaDeEquipo from "../../assets/img/paginaDeEquipo.png";
-import quieroTrabajo from "../../assets/img/quieroTrabajo.png";
-import toDoList from "../../assets/img/toDoList.png";
-import wheelOfDoom from "../../assets/img/wheelOfDoom.png";
-import coders from "../../assets/img/coders.png";
+import econotravel from "../../assets/img/projectsImg/econotravel.png";
+import goHome from "../../assets/img/projectsImg/goHome.png";
+import legacyGames from "../../assets/img/projectsImg/legacyGames.png";
+import libritos from "../../assets/img/projectsImg/libritos.png";
+import paginaDeEquipo from "../../assets/img/projectsImg/paginaDeEquipo.png";
+import quieroTrabajo from "../../assets/img/projectsImg/quieroTrabajo.png";
+import toDoList from "../../assets/img/projectsImg/toDoList.png";
+import wheelOfDoom from "../../assets/img/projectsImg/wheelOfDoom.png";
+import coders from "../../assets/img/projectsImg/coders.png";
 import './Projects.css'
-import * as icon from '../../assets/img/techImg';
+import * as icon from '../../assets/img/icons/techImg';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 
@@ -118,20 +118,11 @@ export const Projects = () => {
         <container className="carousel-container">
             <div className="Tech-title projects">
                 <h2>PROJECTS</h2>
-                <Carousel responsive={responsive} swipeable={false}
-                          draggable={true}
-                          showDots={false}
-                          ssr={true} // means to render carousel on server-side.
-                          infinite={true}
-                          autoPlaySpeed={3000}
+                <Carousel responsive={responsive} infinite={true} showDots={false}
+                          autoPlaySpeed={4000}
                           keyBoardControl={true}
-                          customTransition="all .5"
-                          transitionDuration={500}
-                          containerClass="carousel-container"
-                          removeArrowOnDeviceType={["tablet", "mobile"]}
-                          dotListClass="custom-dot-list-style"
-                          itemClass="carousel-item-padding-40-px"
-                >
+                          transitionDuration={600} showThumbs={false}>
+
 
                     {projects.map(project =>
                         (<div className="project-img" onMouseEnter={() => setShowHoverLayer(true)}
