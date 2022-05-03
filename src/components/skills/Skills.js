@@ -47,7 +47,7 @@ const Skills = () => {
 
     return (
         <section>
-            <div className="Tech-title skills" data-aos="fade-right">
+            <div className="Tech-title skills" data-aos="zoom-in-up" data-aos-duration="3000">
                 <h2>TOOLS</h2>
                 <div className="tech-grid">
                     {Skills.map(Skills =>
