@@ -1,9 +1,11 @@
 import React from 'react';
 import "./Tech.css";
 import * as icon from '../../assets/img/icons/techImg'
+import AOS from "aos";
+
 
 const Tech = () => {
-
+    AOS.init();
     const Tech = [
         {
             image: icon.html,
@@ -75,7 +77,7 @@ const Tech = () => {
 
     return (
         <section>
-            <div className="Tech-title tech">
+            <div className="Tech-title tech" data-aos="fade-left">
                 <h2>TECH</h2>
                 <div className="tech-grid">
                     {Tech.map(Tech =>
