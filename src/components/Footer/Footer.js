@@ -11,13 +11,13 @@ const Footer = () => {
             <div className="findMe-icons">
                 <div className="socialMedia">
                     <a href="https://github.com/desimorenoh" target="_blank" rel="noreferrer">
-                        <img className="socialMedia"  alt="github icon" src={Github}/>
+                        <img className="socialMedia pulse"  alt="github icon" src={Github}/>
                     </a>
                     <a href="https://linkedin.com/in/md-morenoh" target="_blank" rel="noreferrer">
-                        <img className="socialMedia" alt="linkedin icon" src={Linkedin}/>
+                        <img className="socialMedia pulse" alt="linkedin icon" src={Linkedin}/>
                     </a>
                     <a href="mailto:desimorenoh@gmail.com" target="_blank" rel="noreferrer">
-                        <img className="socialMediaM" alt="mail-icon" src={Email}/>
+                        <img className="socialMediaM pulse" alt="mail-icon" src={Email}/>
                     </a>
                 </div>
                 <p>Made by Desirée Moreno © 2022</p>
