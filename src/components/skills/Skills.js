@@ -2,6 +2,7 @@ import React from 'react';
 import "./Tech.css";
 import * as icon from '../../assets/img/icons/techImg.js';
 import AOS from "aos";
+
 const Skills = () => {
     AOS.init();
     const Skills = [

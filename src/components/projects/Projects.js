@@ -13,10 +13,10 @@ import './Projects.css'
 import * as icon from '../../assets/img/icons/techImg';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
-
+import AOS from "aos";
 
 export const Projects = () => {
-
+    AOS.init();
 
     const projects = [
         {
@@ -125,7 +125,7 @@ export const Projects = () => {
 
 
                     {projects.map(project =>
-                        (<div className="project-img" onMouseEnter={() => setShowHoverLayer(true)}
+                        (<div data-aos="flip-left" className="project-img" onMouseEnter={() => setShowHoverLayer(true)}
                               onMouseLeave={() => setShowHoverLayer(false)}><img src={project.image} className="img-container" alt={project.name}/>
 
                             {showHoverLayer && <div className="hover-layer">
