@@ -1,0 +1,24 @@
+.aboutMe {
+    font-family: monospace, serif;
+    color: white;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.aboutMe h3 {
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 80%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 10%;
+        width: 80%;
+    }
+}

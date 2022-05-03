@@ -20,6 +20,8 @@ const Header = ({close}) => {
                     <ul>
                         <li><Link className="link" activeClass="active" to="/" spy={true} smooth={true} duration={500}
                                   onClick={close}>Home</Link></li>
+                        <li><Link className="link" activeClass="active" to="aboutMe" spy={true} smooth={true} duration={500}
+                                  onClick={close}>About Me</Link></li>
                         <li><Link className="link" activeClass="active" to="tech" offset={-15} spy={true} smooth={true}
                                   duration={500} onClick={close}>Tech</Link></li>
                         <li><Link className="link" activeClass="active" to="projects" offset={-15} spy={true}
