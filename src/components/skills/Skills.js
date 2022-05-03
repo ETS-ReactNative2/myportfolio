@@ -47,7 +47,7 @@ const Skills = () => {
     return (
         <section>
             <div className="Tech-title skills">
-                <h2>SKILLS</h2>
+                <h2>TOOLS</h2>
                 <div className="tech-grid">
                     {Skills.map(Skills =>
                         <div className="tech-card" key={Skills.name}>
