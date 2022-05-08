@@ -77,7 +77,7 @@ const Tech = () => {
 
     return (
         <section>
-            <div className="Tech-title tech" data-aos="fade-left" data-aos-duration="3000">
+            <div className="Tech-title tech" data-aos="zoom-in-up" data-aos-duration="3000">
                 <h2>TECH</h2>
                 <div className="tech-grid">
                     {Tech.map(Tech =>
